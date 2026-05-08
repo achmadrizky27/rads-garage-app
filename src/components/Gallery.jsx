@@ -137,7 +137,7 @@ export default function Gallery() {
         {totalPages > 1 && <Pagination page={page} totalPages={totalPages} onPageChange={setPage} sectionRef={sectionRef} />}
 
         <div className="mt-10 text-center reveal">
-          <a href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer" className="inline-block font-mono text-[#6B6B63] text-xs tracking-widest uppercase hover:text-[#E8631A] transition-colors duration-300">
+          <a href="https://wa.me/628987461067" target="_blank" rel="noopener noreferrer" className="inline-block font-mono text-[#6B6B63] text-xs tracking-widest uppercase hover:text-[#E8631A] transition-colors duration-300">
             Lihat semua project →
           </a>
         </div>
