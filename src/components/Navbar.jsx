@@ -23,7 +23,7 @@ export default function Navbar() {
       <nav className="max-w-7xl mx-auto px-6 md:px-10 flex items-center justify-between h-16 md:h-20">
         {/* Logo */}
         <a href="#" className="relative w-20 h-20  flex items-center justify-center transform group-hover:bg-[#F5A623] transition-colors duration-300">
-          <img src="./public/radsGarage.png" alt="rads_garage.png" />
+          <img src="./images/logo/radsGarage.png" alt="rads_garage.png" />
         </a>
 
         {/* Desktop Nav */}
