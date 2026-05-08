@@ -1,42 +1,36 @@
 export const services = [
   {
     id: 1,
-    icon: "🔧",
     title: "Engine Overhaul",
     desc: "Pemeriksaan dan perbaikan menyeluruh mesin motor Anda. Dari tune-up ringan hingga rebuild total dengan komponen bergaransi.",
     tag: "MESIN",
   },
   {
     id: 2,
-    icon: "⚡",
     title: "Sistem Kelistrikan",
     desc: "Diagnosa dan perbaikan sistem elektrikal, ECU remapping, instalasi aksesoris, dan upgrade performa kelistrikan.",
     tag: "ELEKTRIKAL",
   },
   {
     id: 3,
-    icon: "🏍️",
     title: "Modifikasi Custom",
     desc: "Wujudkan motor impian Anda. Custom bodykit, airbrush, konversi aliran, dan build full custom dari konsep ke kenyataan.",
     tag: "CUSTOM",
   },
   {
     id: 4,
-    icon: "🛞",
     title: "Kaki-Kaki & Suspensi",
     desc: "Balancing, spooring, ganti ban, upgrade suspensi, dan alignment untuk handling terbaik di segala medan.",
     tag: "SUSPENSI",
   },
   {
     id: 5,
-    icon: "🔩",
     title: "Perawatan Berkala",
-    desc: "Service rutin, ganti oli, filter, busi, rantai, dan semua kebutuhan perawatan motor Anda secara teratur.",
+    desc: "Service rutin, ganti oli, filter, busi, rantai, dan semua kebutuhan perawatan motor Anda secara teratur dan professional.",
     tag: "SERVICE",
   },
   {
     id: 6,
-    icon: "🎨",
     title: "Body & Cat",
     desc: "Cat ulang, perbaikan dent, detailing, coating ceramic, dan pemasangan aksesoris eksterior profesional.",
     tag: "EKSTERIOR",
@@ -45,7 +39,7 @@ export const services = [
 
 export const stats = [
   { value: "5+", label: "Tahun Pengalaman" },
-  { value: "250+", label: "Motor Tertangani" },
+  { value: "375+", label: "Motor Tertangani" },
   { value: "98%", label: "Kepuasan Pelanggan" },
   { value: "2", label: "Mekanik" },
 ];
@@ -80,10 +74,12 @@ export const team = [
 ];
 
 export const gallery = [
-  { id: 1, label: "Honda Beat", cat: "Custom", img: "./images/gallery/hondaBeat.png" },
-  { id: 2, label: "Yamaha NMAX", cat: "Modifikasi", img: "./images/gallery/hondaVario.png" },
-  { id: 3, label: "Suzuki Satria FU", cat: "Restorasi", img: "./images/gallery/hondaCBR.png" },
-  { id: 4, label: "Honda PCX 160 ABS", cat: "Custom", img: "/images/gallery/honda-pcx-160.jpg" },
-  { id: 5, label: "Honda RX-King", cat: "Modifikasi", img: "/images/gallery/honda-rx-king.jpg" },
-  { id: 6, label: "Honda Vario 160 ABS", cat: "Restorasi", img: "/images/gallery/honda-vario-160.jpg" },
+  { id: 1, label: "Honda Beat", cat: "Custom", img: "/images/gallery/hondaBeat.png" },
+  { id: 2, label: "Honda Vario", cat: "Modifikasi", img: "/images/gallery/hondaVario.png" },
+  { id: 3, label: "Honda Stylo", cat: "Restorasi", img: "/images/gallery/hondaCBR.png" },
+  { id: 4, label: "Honda PCX 160 ABS", cat: "Custom", img: "/images/gallery/suzuki.jpg" },
+  { id: 5, label: "Honda RX-King", cat: "Modifikasi", img: "/images/gallery/yamahaJPMX.jpg" },
+  { id: 6, label: "Honda Vario 160 ABS", cat: "Restorasi", img: "/images/gallery/hondaRepsol.jpg" },
+  { id: 7, label: "Honda Vario 160 ABS", cat: "Ganti Oli", img: "/images/gallery/hondaBeat.jpg" },
+  { id: 8, label: "Honda Vario 160 ABS", cat: "Servie Besar", img: "/images/gallery/hondaBeat2.jpg" },
 ];

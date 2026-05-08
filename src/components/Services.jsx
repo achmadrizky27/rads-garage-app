@@ -3,18 +3,14 @@ import { services } from "../data";
 function ServiceCard({ service, index }) {
   return (
     <div className="reveal bg-[#1C1C1A] border border-[#2A2A27] p-8 relative overflow-hidden group hover:border-[#E8631A] transition-all duration-500" style={{ transitionDelay: `${index * 60}ms` }}>
-      {/* Hover background glow */}
-      <div className="absolute top-0 right-0 w-24 h-24 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" style={{ background: "radial-gradient(circle, rgba(232, 99, 26, 0.15) 0%, transparent 70%)" }} />
-
       {/* Tag */}
       <div className="flex items-center justify-between mb-6">
         <span className="font-mono text-[#E8631A] text-[9px] tracking-[0.3em] uppercase border border-[#E8631A]/30 px-3 py-1">{service.tag}</span>
         <span className="text-2xl">{service.icon}</span>
       </div>
 
-      {/* Number */}
+      {/* Item service */}
       <div className="font-display text-6xl text-[#2A2A27] leading-none mb-4 select-none group-hover:text-[#3D3D38] transition-colors duration-300">0{service.id}</div>
-
       <h3 className="font-heading font-bold text-xl text-[#F4F0E8] tracking-wide mb-3 group-hover:text-[#E8631A] transition-colors duration-300">{service.title}</h3>
       <p className="text-[#6B6B63] text-sm leading-relaxed group-hover:text-[#A8A89E] transition-colors duration-300">{service.desc}</p>
 
@@ -26,7 +22,7 @@ function ServiceCard({ service, index }) {
 
 export default function Services() {
   return (
-    <section id="services" className="relative py-28 md:py-40 bg-[#111110]">
+    <section id="layanan" className="relative py-28 md:py-40 bg-[#111110]">
       {/* Top diagonal */}
       <div className="absolute top-0 left-0 right-0 h-16 bg-[#0A0A08]" style={{ clipPath: "polygon(0 0, 100% 0, 100% 0, 0 100%)" }} />
 
