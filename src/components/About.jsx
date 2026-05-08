@@ -47,7 +47,7 @@ export default function About() {
                   />
                   {/* Center text */}
                   <div className="relative text-center z-10 p-10">
-                    <img src="./public/radsGarage.png" alt="radsGarage.png" />
+                    <img src="./images/logo/radsGarage.png" alt="radsGarage.png" />
                   </div>
                 </div>
               </div>
