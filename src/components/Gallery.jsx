@@ -66,9 +66,9 @@ function LightboxModal({ item, onClose }) {
 
         {/* Info + dots */}
         <div className="bg-[#0A0A08] border border-t-0 border-[#2A2A27] px-5 py-4 flex items-center justify-between">
-          <div>
-            <div className="font-mono text-[#E8631A] text-[9px] tracking-[0.3em] uppercase mb-1">{item.cat}</div>
-            <div className="font-heading font-bold text-[#F4F0E8] text-base tracking-wide">{item.label}</div>
+          <div className="font mono">
+            <div className="text-[#E8631A] text-sm tracking-[0.3em] uppercase mb-1">{item.category}</div>
+            <div className="text-sm tracking-[0.3em] uppercase">{item.type}</div>
           </div>
 
           {/* Dot indicator */}
@@ -94,14 +94,16 @@ function GalleryItem({ item, index }) {
   return (
     <>
       <div
-        className="group relative overflow-hidden cursor-pointer"
+        className="cursor-pointer font-poppins group overflow-hidden relative"
         onClick={() => setOpen(true)}
         style={{
           transitionDelay: `${(index % PER_PAGE) * 80}ms`,
           aspectRatio: index % PER_PAGE === 0 || index % PER_PAGE === 3 ? "1/1.2" : "1/1",
         }}>
         <img src={thumb} alt={item.label} className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
-        <div className="absolute inset-0 bg-[#0A0A08]/40" />
+        <div className="absolute inset-0 bg-[#0A0A08]/50" />
+
+        {/* Background grid lines */}
         <div
           className="absolute inset-0 opacity-5"
           style={{
@@ -109,26 +111,21 @@ function GalleryItem({ item, index }) {
             backgroundSize: "40px 40px",
           }}
         />
-        <div className="absolute inset-0 bg-[#0A0A08]/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-          <div>
-            <div className="font-mono text-[#E8631A] text-[9px] tracking-[0.3em] uppercase mb-2">{item.cat}</div>
-            <div className="font-heading font-bold text-[#F4F0E8] text-lg tracking-wide">{item.label}</div>
+
+        {/* Label or name tag (category & type) */}
+        <div className="absolute inset-0 bg-[#0A0A08]/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+          <div className="text-sm tracking-[0.3em] uppercase">
+            {item.category} <br /> <span className="text-[#E8631A]">{item.type}</span>
           </div>
         </div>
-        <div className="absolute inset-0 border border-[#2A2A27] group-hover:border-[#E8631A] transition-colors duration-300 pointer-events-none" />
 
-        {/* Badge kategori */}
-        <div className="absolute top-4 left-4 bg-[#0A0A08]/60 backdrop-blur-sm px-3 py-1">
-          <span className="font-mono text-[#E8631A] text-[9px] tracking-widest uppercase">{item.author}</span>
+        {/* Tag brand */}
+        <div className="absolute top-4 left-4">
+          <p className="bg-transparent/10 border border-[#E8631A]/30 px-3 py-1 text-[#E8631A] text-xs tracking-[0.3em] uppercase">{item.brand}</p>
         </div>
 
-        {/* Badge jumlah foto */}
-        {images.length > 1 && (
-          <div className="absolute top-4 right-4 bg-[#0A0A08]/60 backdrop-blur-sm px-3 py-1 flex items-center gap-1">
-            <i className="bi bi-images text-[#E8631A] text-xs" />
-            <span className="font-mono text-[#E8631A] text-[9px] tracking-widest">{images.length}</span>
-          </div>
-        )}
+        {/* Border or outline */}
+        <div className="absolute border border-[#2A2A27] group-hover:border-[#E8631A] duration-300 inset-0 pointer-events-none transition-colors" />
       </div>
 
       {open && <LightboxModal item={item} onClose={() => setOpen(false)} />}
@@ -204,7 +201,7 @@ export default function Gallery() {
   }, [totalPages]);
 
   return (
-    <section id="galeri" ref={sectionRef} className="relative py-28 md:py-40 bg-[#111110]">
+    <section id="galeri" ref={sectionRef} className="font-poppins relative py-28 md:py-40 bg-[#111110]">
       <div className="max-w-7xl mx-auto px-6 md:px-10 space-y-6">
         {/* Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between space-y-3">
@@ -225,7 +222,7 @@ export default function Gallery() {
         </div>
 
         {/* Grid */}
-        <div key={page} className="grid grid-cols-2 md:grid-cols-3 gap-3">
+        <div key={page} className="grid md:grid-cols-3 gap-3">
           {paginated.map((item, i) => (
             <GalleryItem key={item.id} item={item} index={i} />
           ))}
