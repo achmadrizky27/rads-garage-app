@@ -7,7 +7,7 @@ const katalogMotor = [
     id: 1,
     brand: "Yamaha",
     type: "Manual",
-    name: "Jupiter Z",
+    name: "Yamaha Jupiter Z",
     unit: "Second",
     price: "Rp 7.000.000",
     priceNum: 7000000,
@@ -155,8 +155,8 @@ function DetailModal({ item, onClose }) {
   }, [onClose]);
 
   return (
-    <div className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4" onClick={onClose}>
-      <div className="relative max-w-2xl w-full" onClick={(e) => e.stopPropagation()}>
+    <div className="fixed inset-0 bg-black/90 z-50 flex items-start justify-center p-4 pt-14 overflow-y-auto" onClick={onClose}>
+      <div className="relative max-w-2xl w-full mb-8" onClick={(e) => e.stopPropagation()}>
         <button onClick={onClose} className="absolute -top-10 right-0 font-mono text-[#6B6B63] hover:text-[#E8631A] text-[10px] tracking-widest uppercase transition-colors">
           Tutup ✕
         </button>
@@ -170,7 +170,7 @@ function DetailModal({ item, onClose }) {
         </div>
 
         <div className="border border-[#2A2A27]">
-          <ImageSlider imgs={item.imgs} aspectRatio="16/9" showThumbs={true} />
+          <ImageSlider imgs={item.imgs} aspectRatio="9/16" showThumbs={true} />
         </div>
 
         <div className="bg-[#0A0A08] border border-t-0 border-[#2A2A27] px-6 py-5">
@@ -189,7 +189,7 @@ function DetailModal({ item, onClose }) {
               { label: "CC", val: item.cc },
               { label: "BB", val: item.bb },
               { label: "TAHUN", val: item.tahun },
-              { label: "UNIT", val: item.status },
+              { label: "UNIT", val: item.unit },
             ].map((s) => (
               <div key={s.label} className="border border-[#2A2A27] px-3 py-2">
                 <div className="font-mono text-[#6B6B63] text-[9px] tracking-widest">{s.label}</div>
@@ -249,7 +249,7 @@ function MotorCard({ item, index }) {
     <>
       <div className="cursor-pointer group overflow-hidden relative border border-[#2A2A27] hover:border-[#E8631A] transition-colors duration-300" style={{ transitionDelay: `${(index % PER_PAGE) * 60}ms` }} onClick={() => setOpen(true)}>
         <div className="relative">
-          <ImageSlider imgs={item.imgs} aspectRatio="16/9" />
+          <ImageSlider imgs={item.imgs} aspectRatio="9/16" />
 
           <div className="absolute top-3 left-3" style={{ zIndex: 10 }}>
             <span className="border border-[#E8631A]/40 bg-[#0A0A08]/60 px-2.5 py-1 text-[#E8631A] text-[9px] font-mono tracking-[0.3em] uppercase">{item.brand}</span>
