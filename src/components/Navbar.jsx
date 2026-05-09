@@ -30,7 +30,7 @@ export default function Navbar() {
       <nav className="flex h-16 md:h-20 items-center justify-between max-w-7xl mx-auto px-6 md:px-10">
         {/* Logo */}
         <a href="/" className="duration-300 flex group-hover:bg-[#F5A623] items-center justify-center transform transition-colors">
-          <p className="font-semibold text-xl md:text-2xl">RADS'G</p>
+          <p className="font-semibold text-xl md:text-2xl">RADS GROUP</p>
         </a>
 
         {/* Desktop navbar */}

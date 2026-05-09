@@ -43,7 +43,7 @@ function TestimonialCard({ t, index }) {
 
 export default function Testimonials() {
   return (
-    <section id="testimonial" className="relative py-28 md:py-40 bg-[#0A0A08]">
+    <section id="testimoni" className="relative py-28 md:py-40 bg-[#0A0A08]">
       {/* Decorative large text */}
       <div className="absolute bottom-20 right-0 font-display text-[15vw] leading-none select-none pointer-events-none hidden lg:block" style={{ color: "transparent", WebkitTextStroke: "1px rgba(232, 99, 26, 0.05)" }}>
         TRUST

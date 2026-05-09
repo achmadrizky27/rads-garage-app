@@ -19,7 +19,7 @@ export default function Contact() {
   ];
 
   return (
-    <section id="contact" className="relative py-28 md:py-40 bg-[#111110]">
+    <section id="kontak" className="relative py-28 md:py-40 bg-[#111110]">
       {/* Top diagonal */}
       <div className="absolute top-0 left-0 right-0 h-16 bg-[#0A0A08]" style={{ clipPath: "polygon(0 0, 100% 0, 100% 0, 0 100%)" }} />
 

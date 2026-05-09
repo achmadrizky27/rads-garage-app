@@ -36,7 +36,7 @@ function TeamCard({ member, index }) {
 
 export default function Team() {
   return (
-    <section id="team" className="relative py-28 md:py-40 bg-[#111110]">
+    <section id="tim" className="relative py-28 md:py-40 bg-[#111110]">
       <div className="max-w-7xl mx-auto px-6 md:px-10">
         <div className="grid md:grid-cols-2 gap-16 md:gap-24 items-start">
           {/* Left */}

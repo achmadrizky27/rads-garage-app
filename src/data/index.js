@@ -26,7 +26,7 @@ export const services = [
   {
     id: 5,
     title: "Perawatan Berkala",
-    desc: "Service rutin, ganti oli, filter, busi, rantai, dan semua kebutuhan perawatan motor Anda secara teratur dan professional.",
+    desc: "Service rutin, ganti oli, filter, busi, rantai, dan semua kebutuhan perawatan motor Anda secara teratur dan profesional.",
     tag: "SERVICE",
   },
   {
@@ -37,11 +37,12 @@ export const services = [
   },
 ];
 
+const yearsInOperation = new Date().getFullYear() - 2021;
 export const stats = [
-  { value: "5+", label: "Tahun Pengalaman" },
-  { value: "375+", label: "Motor Tertangani" },
+  { value: `${yearsInOperation}+`, label: "Tahun Pengalaman" },
+  { value: "500+", label: "Layanan Motor Diselesaikan" },
   { value: "98%", label: "Kepuasan Pelanggan" },
-  { value: "2", label: "Mekanik" },
+  { value: "3", label: "Mekanik Berpengalaman" },
 ];
 
 export const testimonials = [
@@ -74,12 +75,12 @@ export const team = [
 ];
 
 export const gallery = [
-  { id: 1, label: "Honda Beat", cat: "Custom", img: "/images/gallery/hondaBeat.png" },
-  { id: 2, label: "Honda Vario", cat: "Modifikasi", img: "/images/gallery/hondaVario.png" },
-  { id: 3, label: "Honda Stylo", cat: "Restorasi", img: "/images/gallery/hondaCBR.png" },
-  { id: 4, label: "Honda PCX 160 ABS", cat: "Custom", img: "/images/gallery/suzuki.jpg" },
-  { id: 5, label: "Honda RX-King", cat: "Modifikasi", img: "/images/gallery/yamahaJPMX.jpg" },
-  { id: 6, label: "Honda Vario 160 ABS", cat: "Restorasi", img: "/images/gallery/hondaRepsol.jpg" },
-  { id: 7, label: "Honda Vario 160 ABS", cat: "Ganti Oli", img: "/images/gallery/hondaBeat.jpg" },
-  { id: 8, label: "Honda Vario 160 ABS", cat: "Servie Besar", img: "/images/gallery/hondaBeat2.jpg" },
+  {
+    id: 1,
+    author: "Pak Kurnadi",
+    label: "Honda Vario 125",
+    cat: "Service",
+    images: ["/images/gallery/hondaVario-1-(1).png", "/images/gallery/hondaVario-1-(2).png", "/images/gallery/hondaVario-1-(3).png"],
+  },
+  { id: 2, author: "Pramudyo", label: "Honda BeaT Deluxe", cat: "Modifikasi", images: ["/images/gallery/hondaBeat-1-(1).jpg", "/images/gallery/hondaBeat-1-(2).jpg"] },
 ];
