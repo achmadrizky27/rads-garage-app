@@ -5,6 +5,7 @@ import About from "../components/About";
 import Services from "../components/Services";
 import Stats from "../components/Stats";
 import Gallery from "../components/Gallery";
+import Showroom from "../components/Showroom";
 import Team from "../components/Team";
 import Testimonials from "../components/Testimonials";
 import Contact from "../components/Contact";
@@ -19,6 +20,7 @@ export default function Home() {
       <Services />
       <Stats />
       <Gallery />
+      <Showroom />
       <Team />
       <Testimonials />
       <Contact />

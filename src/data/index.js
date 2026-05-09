@@ -138,4 +138,11 @@ export const gallery = [
     category: "Servis Rutin",
     images: ["/images/gallery/yamahaMioSoul-1-(1).jpg", "/images/gallery/yamahaMioSoul-1-(2).jpg"],
   },
+  {
+    id: 10,
+    brand: "Suzuki",
+    type: "Skydrive 125",
+    category: "Repair Machine Block",
+    images: ["/images/gallery/suzukiSkydrive-1-(1).jpg", "/images/gallery/suzukiSkydrive-1-(2).jpg"],
+  },
 ];
