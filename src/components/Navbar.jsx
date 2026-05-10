@@ -29,7 +29,7 @@ export default function Navbar() {
     <header className={`duration-300 fixed font-poppins left-0 right-0 top-0 transition-all z-50 ${scrolled ? "bg-[#0A0A08]/95 backdrop-blur-md border-b border-[#2A2A27]" : "bg-transparent"}`}>
       <nav className="flex h-16 md:h-20 items-center justify-between max-w-7xl mx-auto px-6 md:px-10">
         {/* Logo */}
-        <a href="/" className="duration-300 flex group-hover:bg-[#F5A623] items-center justify-center transform transition-colors">
+        <a href="https://radsgroup.vercel.app" className="duration-300 flex group-hover:bg-[#F5A623] items-center justify-center transform transition-colors">
           <p className="font-semibold text-xl md:text-2xl">RADS GROUP</p>
         </a>
 
